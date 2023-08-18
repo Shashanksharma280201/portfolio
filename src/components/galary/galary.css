@@ -1,0 +1,35 @@
+.container .galary__container {
+  width: 40%;
+}
+
+.client__avatar {
+  width: 15rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 10%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid var(--color-primary-variant);
+}
+
+.galary {
+  background: var(--color-primary-variant);
+  text-align: center;
+  padding: 2rem;
+  user-select: none;
+}
+
+/* =============== media query (medium screen)  ================== */
+
+@media screen and (max-width: 1024px) {
+    .container .galary__container{
+        width: 60%;
+    }
+}
+
+/* =============== media query (small screen) ================== */
+
+@media screen and (max-width: 600px) {
+    .container .galary__container{
+        width: var(--container-width-sm);
+    }
+}
